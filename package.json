@@ -1,0 +1,25 @@
+{
+  "name": "developer-box-bot",
+  "version": "1.0.0",
+  "description": "discord bot for my discord server",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "developer",
+    "box"
+  ],
+  "author": "MaliBYK",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "simply-discord": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
