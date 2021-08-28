@@ -1,4 +1,4 @@
-const { rolAl, sohbet, kurallar } = require("../channelIDs");
+const { rolAl, sohbet, kurallar } = require("../config/channelIDs");
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "guildMemberAdd",
