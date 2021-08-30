@@ -1,4 +1,4 @@
-const { rolAl, sohbet, kurallar } = require("../config/channelIDs");
+const { getRole, generalChat, rules } = require("../config/channelIDs");
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "guildMemberAdd",
@@ -9,9 +9,9 @@ module.exports = {
       .setDescription(
         `<@${member.id}>,**Developer Box sunucusuna hoş geldin!** 🎉
 
-      <#${kurallar}> **kanalından kurallarımızı okumayı unutma!** 🔔
+      <#${rules}> **kanalından kurallarımızı okumayı unutma!** 🔔
 
-      <#${rolAl}> **kanalından ilgi duyduğun konular hakkında roller alabilirsin.**,
+      <#${getRole}> **kanalından ilgi duyduğun konular hakkında roller alabilirsin.**,
        `
       )
       .setImage(
@@ -21,7 +21,7 @@ module.exports = {
       .setTimestamp();
 
     client.channels
-      .fetch(sohbet)
+      .fetch(generalChat)
       .then(channel => channel.send({ embed: welcomeEmbed }));
   },
 };

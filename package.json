@@ -18,6 +18,7 @@
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "mongoose": "^5.12.12",
     "simply-discord": "^1.2.1"
   },
   "devDependencies": {

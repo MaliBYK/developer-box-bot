@@ -1,4 +1,4 @@
-const { rolAl } = require("../config/channelIDs");
+const { getRole } = require("../../config/channelIDs");
 const firstMessage = require("./first-message");
 const { emojis, getEmoji } = require("./reactionEmojis");
 module.exports = client => {
@@ -11,5 +11,5 @@ module.exports = client => {
     emojiText += `**${emoji}** = **${role}**
 `;
   }
-  firstMessage(client, rolAl, emojiText, reactions);
+  firstMessage(client, getRole, emojiText, reactions);
 };

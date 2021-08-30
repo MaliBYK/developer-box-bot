@@ -1,4 +1,4 @@
-const { rolAl } = require("../config/channelIDs");
+const { rolAl } = require("../../config/channelIDs");
 
 const emojis = {
   javascript: "JavaScript",
